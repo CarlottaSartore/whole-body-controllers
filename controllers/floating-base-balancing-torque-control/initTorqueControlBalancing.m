@@ -50,7 +50,7 @@ Config.tStep           = 0.01;
 % 'COORDINATOR': the robot can either balance on two feet or move from left
 %                to right follwing a desired center-of-mass trajectory.
 % 
-DEMO_TYPE                     = 'TWO_FEET_TRAJECTORY';
+DEMO_TYPE                     = 'YOGA';
 
 % Config.SCOPES: debugging scopes activation
 Config.SCOPES_WRENCHES        = true;
@@ -76,10 +76,12 @@ run(strcat('app/robots/',getenv('YARP_ROBOT_NAME'),'/gainsAndReferences.m'));
 if strcmpi(DEMO_TYPE, 'COORDINATOR')
 
     Config.COORDINATOR_DEMO = true;
+    Config.TWO_FEET_TRAJECTORY_DEMO = false ;
     
 elseif strcmpi(DEMO_TYPE, 'YOGA')
     
     Config.COORDINATOR_DEMO = false;
+    Config.TWO_FEET_TRAJECTORY_DEMO = false ;
 
 elseif strcmpi(DEMO_TYPE, 'TWO_FEET_TRAJECTORY')
     Config.TWO_FEET_TRAJECTORY_DEMO = true ;

@@ -62,7 +62,7 @@ StateMachine.yogaAlsoOnRightFoot          = false; % TO DO: yoga on both feet st
 % foot, back on two feet, yoga right foot, back on two feet). The demo is
 % repeated until the user stops the Simulink model. This option is ignored
 % if Sm.demoStartsOnRightSupport = true.
-StateMachine.twoFeetYogaInLoop            = false;
+StateMachine.twoFeetYogaInLoop            = true;
 
 % the robot will repeat the ONE FOOT yoga for the number of times the user
 % specifies in the Sm.yogaCounter option. The robot WILL NOT go back to two
