@@ -155,6 +155,12 @@ StateMachine.joints_references = [ zeros(1,ROBOT_DOF);                          
                                    zeros(1,ROBOT_DOF)];                               %% THIS REFERENCE IS IGNORED       
 
 % YOGA MOVESET (joint references during state 4 and 10)
+q0 = [    0.0072, -0.0026, 0.0112,...
+   -0.5169 ,0.5156, 0.0004, 0.7834...
+   -0.5169, 0.5196, 0.0008, 0.7828...
+   -0.0004, 0.0017, -0.0344, 0.0024, 0.0292, -0.0016...
+   -0.0096,-0.0020,  0.0344, -0.0016, 0.0159, 0.0023];
+
 q1 =        [-0.0790,0.2279, 0.4519, ...
              -1.1621,0.6663, 0.4919, 0.9947, ... 
              -1.0717,1.2904,-0.2447, 1.0948, ...
@@ -283,7 +289,25 @@ StateMachine.joints_leftYogaRef  = [ 0,                                    q1;
                                     23*StateMachine.jointsSmoothingTime(4),q16;
                                     24*StateMachine.jointsSmoothingTime(4),q17;
                                     25*StateMachine.jointsSmoothingTime(4),q8];
-                 
+
+                                
+                                
+%%ReferenceTwoFeetTrajectory 
+Q_ref_base = [q0;q1;q2;q3;q4;q5;q6;q7;q8;q9;q10;q11;q12;q13;q14;q15;q16;...
+                                  q17;q10;q11;q12;q13;q14;q15;q16;q17;q8];
+time_ref = [0.0;StateMachine.joints_leftYogaRef(:,1)];
+time_ref(2:end) = time_ref(2:end)+ones(size(time_ref(2:end)))*StateMachine.jointsSmoothingTime(4);
+time_compute =[time_ref(1):0.01:time_ref(end)];
+Q_ref= zeros(length(time_compute),23);
+
+for j = 1:size(Q_ref,2)
+    F = griddedInterpolant(time_ref,Q_ref_base(:,j));
+    Q_ref(:,j) = F(time_compute);
+end
+
+StateMachine.joints_TWO_FEET_TRAJECTORYRef = Q_ref; 
+%
+% StateMachine.Q_ref_TWO_FEET_TRAJECTORY = Q_ref;
 StateMachine.joints_rightYogaRef      = StateMachine.joints_leftYogaRef;
 StateMachine.joints_rightYogaRef(:,1) = [0;
                                          1*StateMachine.jointsSmoothingTime(10);

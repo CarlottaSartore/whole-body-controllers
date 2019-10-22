@@ -50,7 +50,7 @@ Config.tStep           = 0.01;
 % 'COORDINATOR': the robot can either balance on two feet or move from left
 %                to right follwing a desired center-of-mass trajectory.
 % 
-DEMO_TYPE                     = 'YOGA';
+DEMO_TYPE                     = 'TWO_FEET_TRAJECTORY';
 
 % Config.SCOPES: debugging scopes activation
 Config.SCOPES_WRENCHES        = true;
@@ -79,5 +79,9 @@ if strcmpi(DEMO_TYPE, 'COORDINATOR')
     
 elseif strcmpi(DEMO_TYPE, 'YOGA')
     
+    Config.COORDINATOR_DEMO = false;
+
+elseif strcmpi(DEMO_TYPE, 'TWO_FEET_TRAJECTORY')
+    Config.TWO_FEET_TRAJECTORY_DEMO = true ;
     Config.COORDINATOR_DEMO = false;
 end

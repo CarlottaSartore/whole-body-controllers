@@ -1,12 +1,12 @@
 Model {
   Name			  "torqueControlBalancing"
-  Version		  9.0
+  Version		  10.0
   SavedCharacterEncoding  "UTF-8"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.3488"
+    ComputedModelVersion    "1.3490"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -14,7 +14,10 @@ Model {
     NumResetEvents	    0
     HasInitializeEvent	    0
     HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
     IsExportFunctionModel   0
+    IsArchitectureModel	    0
+    IsAUTOSARArchitectureModel 0
     NumParameterArguments   0
     NumExternalFileReferences 55
     ExternalFileReference {
@@ -385,14 +388,14 @@ Model {
     }
     OrderedModelArguments   1
   }
+  WebScopes_FoundationPlugin "on"
   DiagnosticSuppressor	  "on"
-  SuppressorTable	  "22 serialization::archive 11 0 6 0 0 0 1 0"
-  LogicAnalyzerGraphicalSettings ""
-  LogicAnalyzerPlugin	  "on"
-  LogicAnalyzerSignalOrdering ""
-  CustomCodeFunctionData  ""
+  AnimationPlugin	  "on"
   SLCCPlugin		  "on"
+  NotesPlugin		  "on"
+  LogicAnalyzerPlugin	  "on"
   PostLoadFcn		  "%% Try to open the static GUI and try to adjust it \ntry\n\n    staticGUI = simulinkStaticGUI;\n\nend"
+  EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -416,7 +419,7 @@ Model {
   "ton,'Backgroundcolor',[1.0,0.6,0.0]);\n    set(sl_synch_handles.compileButton,'Enable','on');\n\n    %% Update Exit "
   "Button\n    set(sl_synch_handles.exitButton,'Backgroundcolor',[0.0,1.0,1.0]);\n    set(sl_synch_handles.exitButton,'"
   "Enable','on');\n\nend\n\n\n"
-  LastSavedArchitecture	  "glnxa64"
+  LastSavedArchitecture	  "maci64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -426,7 +429,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [67.0, 27.0, 1853.0, 1053.0]
+      Location		      [0.0, 23.0, 1440.0, 829.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -436,6 +439,7 @@ Model {
 	Width			[50]
 	Height			[50]
 	Filter			[59]
+	Minimized		"Unset"
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -443,20 +447,69 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1815.0, 876.0]
-	ZoomFactor		[3.61010101010101]
-	Offset			[776.12199216564068, 363.67375489647452]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		5
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [1]
+	  IsTabbed		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "4030"
+	  Extents		  [1402.0, 600.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-26.830880665518748, -304.14925415949511]
+	  SceneRectInView	  [-26.830880665518748, -304.14925415949511, 1121.6, 480.0]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2163"
+	  Extents		  [1402.0, 600.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-685.65475171232856, -89.041095890410986]
+	  SceneRectInView	  [-685.65475171232856, -89.041095890410986, 1402.0, 600.0]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2087"
+	  Extents		  [1402.0, 600.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-981.378052783613, 2227.9642857142858]
+	  SceneRectInView	  [-981.378052783613, 2227.9642857142858, 1752.5, 750.0]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1402.0, 600.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [651.12237808539874, 353.25587775470206]
+	  SceneRectInView	  [651.12237808539874, 353.25587775470206, 801.14285714285711, 342.85714285714283]
+	}
+	Object {
+	  $ObjectID		  9
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "4836"
+	  Extents		  [1402.0, 600.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-255.03243030575493, -31.969424460431753]
+	  SceneRectInView	  [-255.03243030575493, -31.969424460431753, 1752.5, 750.0]
+	}
+	PropName		"EditorsInfo"
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		6
+	$ObjectID		10
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -467,34 +520,39 @@ Model {
 	DockPosition		"Right"
 	Width			[640]
 	Height			[480]
+	Minimized		"Unset"
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABqAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAALAD///8AAAc9AAADqgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACA/////wAAAAAAAAAA/////wEAAADo/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFo/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAANR/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "QBjAHQAbwByAAAAAAD/////AAAAOQD///8AAAWgAAAClQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAA"
+      Array {
+	Type			"Cell"
+	Dimension		0
+	PropName		"PersistedApps"
+      }
+      WindowUuid	      "ce618b01-d5e6-4002-94b6-72af1d449f05"
     }
+    BDUuid		    "59a694b2-6053-456c-8c2d-78d3422f5856"
   }
   HideAutomaticNames	  on
   Created		  "Tue Feb 18 10:13:36 2014"
   Creator		  "daniele"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "gnava"
+  LastModifiedBy	  "csartore"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Oct 15 12:23:35 2019"
-  RTWModifiedTimeStamp	  493043015
-  ModelVersionFormat	  "1.%<AutoIncrement:3488>"
+  LastModifiedDate	  "Thu Oct 17 17:55:46 2019"
+  RTWModifiedTimeStamp	  493235745
+  ModelVersionFormat	  "1.%<AutoIncrement:3490>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
   WideLines		  off
   ShowLineDimensions	  on
   ShowPortDataTypes	  off
+  ShowAllPropagatedSignalLabels	off
   PortDataTypeDisplayFormat "AliasTypeOnly"
   ShowEditTimeErrors	  on
   ShowEditTimeWarnings	  on
@@ -509,6 +567,7 @@ Model {
   ShowViewerIcons	  on
   SortedOrder		  on
   VariantCondition	  off
+  ShowSubsystemDomainSpec off
   ExecutionContextIcon	  off
   ShowLinearizationAnnotations on
   ShowVisualizeInsertedRTB on
@@ -522,13 +581,21 @@ Model {
   BrowserShowLibraryLinks on
   FunctionConnectors	  off
   BrowserLookUnderMasks	  on
+  MultiThreadCoSim	  on
   SimulationMode	  "normal"
-  VisualizeLoggedSignalsWhenLoggingToFile off
+  SILPILModeSetting	  "automated"
+  SILPILSystemUnderTest	  "topmodel"
+  SILPILSimulationModeTopModel "normal"
+  SILPILSimulationModeModelRef "normal"
+  SimTabSimulationMode	  "normal"
+  CodeVerificationMode	  "software-in-the-loop (sil)"
   PauseTimes		  "5"
   NumberOfSteps		  1
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
   ParamWorkspaceSource	  "MATLABWorkspace"
@@ -538,7 +605,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    11
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "torqueControlBalancing"
     signals_		    []
@@ -584,21 +651,23 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      8
-      Version		      "1.17.1"
+      $ObjectID		      12
+      Version		      "19.1.1"
       DisabledProps	      []
       Description	      ""
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  9
-	  Version		  "1.17.1"
+	  $ObjectID		  13
+	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  StartTime		  "0.0"
 	  StopTime		  "Config.SIMULATION_TIME "
 	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
 	  FixedStep		  "Config.tStep"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
@@ -629,12 +698,15 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	  SampleTimeProperty	  []
 	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
+	  SolverOrder		  3
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
-	  Version		  "1.17.1"
+	  $ObjectID		  14
+	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -644,7 +716,7 @@ Model {
 	  LoadExternalInput	  off
 	  LoadInitialState	  off
 	  SaveFinalState	  off
-	  SaveCompleteFinalSimState off
+	  SaveOperatingPoint	  off
 	  SaveFormat		  "Array"
 	  SignalLoggingSaveFormat "Dataset"
 	  SaveOutput		  on
@@ -672,11 +744,11 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
-	  Version		  "1.17.1"
+	  $ObjectID		  15
+	  Version		  "19.1.1"
 	  Array {
 	    Type		    "Cell"
-	    Dimension		    8
+	    Dimension		    9
 	    Cell		    "BooleansAsBitfields"
 	    Cell		    "PassReuseOutputArgsAs"
 	    Cell		    "PassReuseOutputArgsThreshold"
@@ -685,14 +757,17 @@ Model {
 	    Cell		    "OptimizeModelRefInitCode"
 	    Cell		    "NoFixptDivByZeroProtection"
 	    Cell		    "UseSpecifiedMinMax"
+	    Cell		    "EfficientTunableParamExpr"
 	    PropName		    "DisabledProps"
 	  }
 	  Description		  ""
+	  Components		  []
 	  BlockReduction	  on
 	  BooleanDataType	  on
 	  ConditionallyExecuteInputs on
 	  DefaultParameterBehavior "Tunable"
 	  UseDivisionForNetSlopeComputation "off"
+	  GainParamInheritBuiltInType off
 	  UseFloatMulNetSlope	  off
 	  DefaultUnderspecifiedDataType	"double"
 	  UseSpecifiedMinMax	  off
@@ -732,10 +807,18 @@ Model {
 	  OptimizeDataStoreBuffers on
 	  BusAssignmentInplaceUpdate on
 	  DifferentSizesBufferReuse off
+	  UseRowMajorAlgorithm	  off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  LabelGuidedReuse	  off
+	  MultiThreadedLoops	  off
+	  DenormalBehavior	  "GradualUnderflow"
+	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
-	  Version		  "1.17.1"
+	  $ObjectID		  16
+	  Version		  "19.1.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    1
@@ -743,10 +826,12 @@ Model {
 	    PropName		    "DisabledProps"
 	  }
 	  Description		  ""
+	  Components		  []
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
 	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
 	  SignalRangeChecking	  "none"
 	  ReadBeforeWriteMsg	  "UseLocalSettings"
 	  WriteAfterWriteMsg	  "UseLocalSettings"
@@ -814,9 +899,11 @@ Model {
 	  ModelReferenceSymbolNameMessage "warning"
 	  ModelReferenceExtraNoncontSigs "error"
 	  StateNameClashWarn	  "warning"
-	  SimStateInterfaceChecksumMismatchMsg "warning"
-	  SimStateOlderReleaseMsg "error"
+	  OperatingPointInterfaceChecksumMismatchMsg "warning"
+	  NonCurrentReleaseOperatingPointMsg "error"
 	  ChecksumConsistencyForSSReuse	"none"
+	  PregeneratedLibrarySubsystemCodeDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
 	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
@@ -847,12 +934,16 @@ Model {
 	  RCSCObservableMsg	  "warning"
 	  ForceCombineOutputUpdateInSim	off
 	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
+	  DebugExecutionForFMUViaOutOfProcess off
+	  ArithmeticOperatorsInVariantConditions "warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
-	  Version		  "1.17.1"
+	  $ObjectID		  17
+	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
@@ -895,12 +986,14 @@ Model {
 	  ProdEqTarget		  on
 	  UseEmbeddedCoderFeatures on
 	  UseSimulinkCoderFeatures on
+	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
-	  Version		  "1.17.1"
+	  $ObjectID		  18
+	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
 	  CheckModelReferenceTargetMessage "error"
@@ -916,10 +1009,11 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
-	  Version		  "1.17.1"
+	  $ObjectID		  19
+	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  SimCustomSourceCode	  ""
 	  SimCustomHeaderCode	  ""
 	  SimCustomInitializer	  ""
@@ -936,6 +1030,7 @@ Model {
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
 	  SimParseCustomCode	  off
+	  SimAnalyzeCustomCode	  off
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
 	  ModelFunctionsGlobalVisibility "on"
@@ -943,11 +1038,14 @@ Model {
 	  EnableRuntimeRecursion  on
 	  MATLABDynamicMemAlloc	  on
 	  MATLABDynamicMemAllocThreshold 65536
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
+	  CustomCodeUndefinedFunction "UseInterfaceOnly"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
-	  Version		  "1.17.1"
+	  $ObjectID		  20
+	  Version		  "19.1.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    16
@@ -969,8 +1067,11 @@ Model {
 	    Cell		    "GenerateMissedCodeReplacementReport"
 	    PropName		    "DisabledProps"
 	  }
+	  Description		  ""
 	  SystemTargetFile	  "grt.tlc"
 	  HardwareBoard		  "None"
+	  ShowCustomHardwareApp	  off
+	  ShowEmbeddedHardwareApp off
 	  TLCOptions		  ""
 	  GenCodeOnly		  on
 	  MakeCommand		  "make_rtw"
@@ -979,9 +1080,7 @@ Model {
 	  PackageName		  ""
 	  TemplateMakefile	  "grt_default_tmf"
 	  PostCodeGenCommand	  ""
-	  Description		  ""
 	  GenerateReport	  off
-	  SaveLog		  off
 	  RTWVerbose		  on
 	  RetainRTWFile		  off
 	  RTWBuildHooks		  []
@@ -997,6 +1096,7 @@ Model {
 	  CustomSource		  ""
 	  CustomLibrary		  ""
 	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
 	  CustomLAPACKCallback	  ""
 	  CustomFFTCallback	  ""
 	  CustomInitializer	  ""
@@ -1011,7 +1111,7 @@ Model {
 	  CodeExecutionProfiling  off
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation off
+	  CodeProfilingInstrumentation "off"
 	  SILDebugging		  off
 	  TargetLang		  "C++"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
@@ -1033,8 +1133,8 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
-	      Version		      "1.17.1"
+	      $ObjectID		      21
+	      Version		      "19.1.1"
 	      Array {
 		Type			"Cell"
 		Dimension		28
@@ -1069,6 +1169,7 @@ Model {
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
+	      Components	      []
 	      Comment		      ""
 	      ForceParamTrailComments off
 	      GenerateComments	      on
@@ -1108,6 +1209,7 @@ Model {
 	      InsertBlockDesc	      off
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
 	      StateflowObjectComments on
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
@@ -1117,14 +1219,15 @@ Model {
 	      ReqsInCode	      off
 	      UseSimReservedNames     off
 	      ReservedNameArray	      []
+	      EnumMemberNameClash     "error"
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
-	      Version		      "1.17.1"
+	      $ObjectID		      22
+	      Version		      "19.1.1"
 	      Array {
 		Type			"Cell"
-		Dimension		17
+		Dimension		18
 		Cell			"GeneratePreprocessorConditionals"
 		Cell			"IncludeMdlTerminateFcn"
 		Cell			"GenerateAllocFcn"
@@ -1142,6 +1245,7 @@ Model {
 		Cell			"RemoveResetFunc"
 		Cell			"ExistingSharedCode"
 		Cell			"RemoveDisableFunc"
+		Cell			"PreserveStateflowLocalDataDimensions"
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
@@ -1149,8 +1253,8 @@ Model {
 		Type			"Handle"
 		Dimension		1
 		Simulink.CPPComponent {
-		  $ObjectID		  19
-		  Version		  "1.18.0"
+		  $ObjectID		  23
+		  Version		  "19.1.1"
 		  Array {
 		    Type		    "Cell"
 		    Dimension		    10
@@ -1167,6 +1271,7 @@ Model {
 		    PropName		    "DisabledProps"
 		  }
 		  Description		  ""
+		  Components		  []
 		  Name			  "CPPClassGenComp"
 		  GenerateDestructor	  on
 		  GenerateExternalIOAccessMethods "None"
@@ -1187,6 +1292,7 @@ Model {
 	      UtilityFuncGeneration   "Auto"
 	      MultiwordTypeDef	      "System defined"
 	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
 	      GenerateFullHeader      on
 	      InferredTypesCompatibility off
 	      ExistingSharedCode      ""
@@ -1200,6 +1306,7 @@ Model {
 	      GeneratePreprocessorConditionals "Disable all"
 	      CombineOutputUpdateFcns on
 	      CombineSignalStateStructs	off
+	      GroupInternalDataByFunction off
 	      SuppressErrorStatus     off
 	      IncludeFileDelimiter    "Auto"
 	      ERTCustomFileBanners    off
@@ -1208,9 +1315,9 @@ Model {
 	      MatFileLogging	      off
 	      MultiInstanceERTCode    on
 	      CodeInterfacePackaging  "C++ class"
+	      PurelyIntegerCode	      off
 	      SupportNonFinite	      off
 	      SupportComplex	      on
-	      PurelyIntegerCode	      off
 	      SupportContinuousTime   on
 	      SupportNonInlinedSFcns  on
 	      RemoveDisableFunc	      off
@@ -1218,6 +1325,7 @@ Model {
 	      SupportVariableSizeSignals off
 	      ParenthesesLevel	      "Nominal"
 	      CastingMode	      "Nominal"
+	      PreserveStateflowLocalDataDimensions off
 	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    on
@@ -1232,6 +1340,11 @@ Model {
 	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
 	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
 	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -1252,10 +1365,11 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  20
-	  Version		  "1.17.1"
+	  $ObjectID		  24
+	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
+	  Components		  []
 	  Name			  "Simulink Coverage"
 	  CovEnable		  off
 	  CovScope		  "EntireSystem"
@@ -1294,25 +1408,24 @@ Model {
 	PropName		"Components"
       }
       Name		      "Configuration"
-      ExtraOptions	      "-aBlockCommentType=\"BlockPathComment\" -aIgnoreTestpoints=0 "
       CurrentDlgPage	      "Solver"
       ConfigPrmDlgPosition    [ 730, 390, 2252, 1260 ]
+      ExtraOptions	      "-aBlockCommentType=\"BlockPathComment\" -aIgnoreTestpoints=0 "
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
+    $ObjectID		    12
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    21
+    $ObjectID		    25
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
     DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
     DefaultExtrapolationMethodBetweenContTasks "None"
-    AutoInsertRateTranBlk   [0]
   }
   ExplicitPartitioning	  off
   BlockDefaults {
@@ -1503,7 +1616,7 @@ Model {
       MustResolveToSignalObject	off
       OutputWhenUnConnected   off
       OutputWhenUnconnectedValue "0"
-      VectorParamsAs1DForOutWhenUnconnected off
+      VectorParamsAs1DForOutWhenUnconnected on
     }
     Block {
       BlockType		      Product
@@ -1530,6 +1643,7 @@ Model {
       FunctionName	      "system"
       SFunctionModules	      "''"
       PortCounts	      "[]"
+      MultiThreadCoSim	      "auto"
     }
     Block {
       BlockType		      Saturate
@@ -1565,6 +1679,7 @@ Model {
       TreatAsAtomicUnit	      off
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
+      ScheduleAs	      "Sample time"
       SystemSampleTime	      "-1"
       RTWSystemCode	      "Auto"
       RTWFcnNameOpts	      "Auto"
@@ -1583,6 +1698,7 @@ Model {
       Opaque		      off
       MaskHideContents	      off
       SFBlockType	      "NONE"
+      VariantControlMode      "Expression"
       Variant		      off
       GeneratePreprocessorConditionals off
       AllowZeroVariantControls off
@@ -1591,6 +1707,9 @@ Model {
       ContentPreviewEnabled   off
       IsWebBlock	      off
       IsObserver	      off
+      Latency		      "0"
+      AutoFrameSizeCalculation off
+      IsWebBlockPanel	      off
     }
     Block {
       BlockType		      Sum
@@ -1632,7 +1751,7 @@ Model {
       MaxDataPoints	      "1000"
       Decimation	      "1"
       SaveFormat	      "Array"
-      Save2DSignal	      "Inherit from input (this choice will be removed - see release notes)"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
       FixptAsFi		      off
       NumInputs		      "1"
       SampleTime	      "0"
@@ -1640,9 +1759,11 @@ Model {
   }
   System {
     Name		    "torqueControlBalancing"
-    Location		    [67, 27, 1920, 1080]
+    Location		    [0, 23, 1440, 852]
     Open		    off
     PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1653,9 +1774,10 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "361"
+    ZoomFactor		    "175"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "4885"
+    SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      Reference
       Name		      "Configuration"
@@ -1671,12 +1793,6 @@ Model {
       ContentPreviewEnabled   off
       ConfigSource	      "Workspace"
       ConfigObject	      "'WBTConfigRobot'"
-      RobotName		      "'icubSim'"
-      UrdfFile		      "'model.urdf'"
-      ControlledJoints	      "{'l_elbow','l_shoulder_pitch','torso_roll'}"
-      ControlBoardsNames      "{'left_arm','right_arm','torso'}"
-      LocalName		      "'WBT'"
-      GravityVector	      "[0,0,-9.81]"
     }
     Block {
       BlockType		      SubSystem
@@ -1691,7 +1807,7 @@ Model {
       RequestExecContextInheritance off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		22
+	$ObjectID		26
 	$ClassName		"Simulink.Mask"
 	Display			"disp('VISUALIZER')"
       }
@@ -1700,6 +1816,8 @@ Model {
 	Location		[134, 55, 3840, 2160]
 	Open			off
 	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1711,6 +1829,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"415"
+	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Desired and Measured Forces"
@@ -1724,6 +1843,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1735,6 +1856,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "240"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "wrench_leftFoot"
@@ -1855,6 +1977,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -1866,6 +1990,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"466"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "wrench_leftFoot"
@@ -1954,6 +2079,7 @@ Model {
 		  Position		  [-365, -132, -335, -118]
 		  ZOrder		  700
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -1963,6 +2089,7 @@ Model {
 		  ZOrder		  702
 		  Port			  "2"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -1972,6 +2099,7 @@ Model {
 		  ZOrder		  703
 		  Port			  "3"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -1981,6 +2109,7 @@ Model {
 		  ZOrder		  706
 		  Port			  "4"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -1990,6 +2119,7 @@ Model {
 		  ZOrder		  701
 		  Port			  "5"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -1999,6 +2129,7 @@ Model {
 		  ZOrder		  704
 		  Port			  "6"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -2008,6 +2139,7 @@ Model {
 		  ZOrder		  705
 		  Port			  "7"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -2017,6 +2149,7 @@ Model {
 		  ZOrder		  707
 		  Port			  "8"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  48
@@ -2835,6 +2968,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2846,6 +2981,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "472"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "feetContactStatus"
@@ -3337,6 +3473,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3348,6 +3486,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "1000"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "QPStatus"
@@ -3453,6 +3592,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3464,6 +3605,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "185"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "tau_star"
@@ -5934,9 +6076,11 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"MOMENTUM BASED TORQUE CONTROL"
-	Location		[134, 55, 3840, 2160]
+	Location		[0, 23, 1440, 852]
 	Open			off
 	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -5947,7 +6091,8 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"278"
+	ZoomFactor		"80"
+	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
 	  Name			  "jointPos"
@@ -6006,6 +6151,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -6017,6 +6164,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "164"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "M"
@@ -6209,6 +6357,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -6220,6 +6370,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"284"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "feetContactStatus"
@@ -6401,6 +6552,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6412,6 +6565,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "343"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "feetContactStatus"
@@ -6535,6 +6689,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6546,7 +6702,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "72"
+		    SIDHighWatermark	    "75"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "feetContactStatus"
@@ -6558,24 +6715,24 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4590::71"
+		    SID			    "4590::74"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    62
+		    ZOrder		    65
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4590::70"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 15"
+		    SID			    "4590::73"
+		    Tag			    "Stateflow S-Function 15"
 		    Ports		    [1, 2]
 		    Position		    [180, 100, 230, 160]
-		    ZOrder		    61
+		    ZOrder		    64
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[1 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -6585,9 +6742,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4590::72"
+		    SID			    "4590::75"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    63
+		    ZOrder		    66
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -6596,9 +6753,10 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    61
+		    ZOrder		    65
 		    SrcBlock		    "feetContactStatus"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -6606,7 +6764,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "onOneFoot"
-		    ZOrder		    62
+		    ZOrder		    66
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -6614,14 +6772,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    63
+		    ZOrder		    67
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    64
+		    ZOrder		    68
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -6644,6 +6802,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6655,6 +6815,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "341"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "H"
@@ -6726,6 +6887,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6737,7 +6900,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "73"
+		    SIDHighWatermark	    "76"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "H"
@@ -6758,24 +6922,24 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4690::72"
+		    SID			    "4690::75"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    63
+		    ZOrder		    66
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4690::71"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 26"
+		    SID			    "4690::74"
+		    Tag			    "Stateflow S-Function 26"
 		    Ports		    [2, 2]
 		    Position		    [180, 100, 230, 160]
-		    ZOrder		    62
+		    ZOrder		    65
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[2 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -6785,9 +6949,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4690::73"
+		    SID			    "4690::76"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    64
+		    ZOrder		    67
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -6796,9 +6960,10 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    26
+		    ZOrder		    31
 		    SrcBlock		    "H"
 		    SrcPort		    1
 		    Points		    [120, 0]
@@ -6806,7 +6971,7 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    27
+		    ZOrder		    32
 		    SrcBlock		    "g"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -6814,7 +6979,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "analyticalSolution"
-		    ZOrder		    28
+		    ZOrder		    33
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -6822,14 +6987,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    29
+		    ZOrder		    34
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    30
+		    ZOrder		    35
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -6869,6 +7034,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6880,7 +7047,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "81"
+		    SIDHighWatermark	    "84"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "analyticalSolution"
@@ -6919,25 +7087,25 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4692::80"
+		    SID			    "4692::83"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    65
+		    ZOrder		    68
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4692::79"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 27"
+		    SID			    "4692::82"
+		    Tag			    "Stateflow S-Function 27"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    64
+		    ZOrder		    67
 		    FunctionName	    "sf_sfun"
 		    Parameters		    "Config"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -6947,9 +7115,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4692::81"
+		    SID			    "4692::84"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    66
+		    ZOrder		    69
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -6958,30 +7126,31 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    42
+		    ZOrder		    49
 		    SrcBlock		    "analyticalSolution"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    43
+		    ZOrder		    50
 		    SrcBlock		    "primalSolution"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    44
+		    ZOrder		    51
 		    SrcBlock		    "QPStatus"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    45
+		    ZOrder		    52
 		    SrcBlock		    "feetContactStatus"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -6989,7 +7158,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "f_star"
-		    ZOrder		    46
+		    ZOrder		    53
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -6997,14 +7166,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    47
+		    ZOrder		    54
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    48
+		    ZOrder		    55
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -7038,6 +7207,7 @@ Model {
 		    Position		    [1790, -172, 1820, -158]
 		    ZOrder		    760
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -7047,6 +7217,7 @@ Model {
 		    ZOrder		    755
 		    Port		    "2"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -7173,6 +7344,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -7184,6 +7357,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "426"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "H"
@@ -7246,6 +7420,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -7257,7 +7433,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "73"
+		    SIDHighWatermark	    "76"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "H"
@@ -7278,24 +7455,24 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4678::72"
+		    SID			    "4678::75"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    63
+		    ZOrder		    66
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4678::71"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 24"
+		    SID			    "4678::74"
+		    Tag			    "Stateflow S-Function 24"
 		    Ports		    [2, 2]
 		    Position		    [180, 100, 230, 160]
-		    ZOrder		    62
+		    ZOrder		    65
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[2 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -7305,9 +7482,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4678::73"
+		    SID			    "4678::76"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    64
+		    ZOrder		    67
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -7316,9 +7493,10 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    26
+		    ZOrder		    31
 		    SrcBlock		    "H"
 		    SrcPort		    1
 		    Points		    [120, 0]
@@ -7326,7 +7504,7 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    27
+		    ZOrder		    32
 		    SrcBlock		    "g"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -7334,7 +7512,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "analyticalSolution"
-		    ZOrder		    28
+		    ZOrder		    33
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -7342,14 +7520,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    29
+		    ZOrder		    34
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    30
+		    ZOrder		    35
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -7389,6 +7567,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -7400,7 +7580,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "81"
+		    SIDHighWatermark	    "84"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "analyticalSolution"
@@ -7430,25 +7611,25 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4680::80"
+		    SID			    "4680::83"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    64
+		    ZOrder		    67
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4680::79"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 25"
+		    SID			    "4680::82"
+		    Tag			    "Stateflow S-Function 25"
 		    Ports		    [3, 2]
 		    Position		    [180, 100, 230, 180]
-		    ZOrder		    63
+		    ZOrder		    66
 		    FunctionName	    "sf_sfun"
 		    Parameters		    "Config"
 		    PortCounts		    "[3 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -7458,9 +7639,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4680::81"
+		    SID			    "4680::84"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    65
+		    ZOrder		    68
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -7469,23 +7650,24 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    50
+		    ZOrder		    56
 		    SrcBlock		    "analyticalSolution"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    51
+		    ZOrder		    57
 		    SrcBlock		    "primalSolution"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    52
+		    ZOrder		    58
 		    SrcBlock		    "QPStatus"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -7493,7 +7675,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "f_star"
-		    ZOrder		    53
+		    ZOrder		    59
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -7501,14 +7683,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    54
+		    ZOrder		    60
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    55
+		    ZOrder		    61
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    Points		    [20, 0]
@@ -7543,6 +7725,7 @@ Model {
 		    Position		    [1765, 1098, 1795, 1112]
 		    ZOrder		    756
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -7552,6 +7735,7 @@ Model {
 		    ZOrder		    760
 		    Port		    "2"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    37
@@ -7676,6 +7860,7 @@ Model {
 		    Position		    [245, -297, 275, -283]
 		    ZOrder		    401
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -7685,6 +7870,7 @@ Model {
 		    ZOrder		    738
 		    Port		    "2"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -7694,6 +7880,7 @@ Model {
 		    ZOrder		    728
 		    Port		    "3"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    3
@@ -7863,6 +8050,7 @@ Model {
 		  Position		  [1630, 608, 1660, 622]
 		  ZOrder		  425
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -7872,6 +8060,7 @@ Model {
 		  ZOrder		  639
 		  Port			  "2"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  293
@@ -8046,6 +8235,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -8057,6 +8248,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"208"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "jointPos_des"
@@ -8133,6 +8325,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -8144,6 +8338,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "723"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "jointPos"
@@ -8228,6 +8423,7 @@ Model {
 		    Position		    [495, -22, 525, -8]
 		    ZOrder		    910
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -8237,6 +8433,7 @@ Model {
 		    ZOrder		    912
 		    Port		    "2"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -8320,6 +8517,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -8331,7 +8530,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "3789"
+		    SIDHighWatermark	    "3792"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "J_l_sole"
@@ -8370,25 +8570,25 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "3721::3788"
+		    SID			    "3721::3791"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    113
+		    ZOrder		    116
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "3721::3787"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 20"
+		    SID			    "3721::3790"
+		    Tag			    "Stateflow S-Function 20"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    112
+		    ZOrder		    115
 		    FunctionName	    "sf_sfun"
 		    Parameters		    "Reg"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -8398,9 +8598,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "3721::3789"
+		    SID			    "3721::3792"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    114
+		    ZOrder		    117
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -8409,30 +8609,31 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    10
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    183
+		    ZOrder		    190
 		    SrcBlock		    "J_l_sole"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    184
+		    ZOrder		    191
 		    SrcBlock		    "J_r_sole"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    185
+		    ZOrder		    192
 		    SrcBlock		    "feetContactStatus"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    186
+		    ZOrder		    193
 		    SrcBlock		    "jointPos_err"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -8440,7 +8641,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "baseVel_equivalent"
-		    ZOrder		    187
+		    ZOrder		    194
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -8448,14 +8649,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    188
+		    ZOrder		    195
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    189
+		    ZOrder		    196
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -8512,6 +8713,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -8523,7 +8726,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "102"
+		    SIDHighWatermark	    "105"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "state"
@@ -8535,24 +8739,24 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4027::101"
+		    SID			    "4027::104"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    92
+		    ZOrder		    95
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4027::100"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 19"
+		    SID			    "4027::103"
+		    Tag			    "Stateflow S-Function 19"
 		    Ports		    [1, 2]
 		    Position		    [180, 100, 230, 160]
-		    ZOrder		    91
+		    ZOrder		    94
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[1 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -8562,9 +8766,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4027::102"
+		    SID			    "4027::105"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    93
+		    ZOrder		    96
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -8573,9 +8777,10 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    105
+		    ZOrder		    109
 		    SrcBlock		    "state"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -8583,7 +8788,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "booleanState"
-		    ZOrder		    106
+		    ZOrder		    110
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -8591,14 +8796,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    107
+		    ZOrder		    111
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    108
+		    ZOrder		    112
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -8639,6 +8844,7 @@ Model {
 		  Position		  [1450, 28, 1480, 42]
 		  ZOrder		  -2
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  1
@@ -8837,6 +9043,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -8848,6 +9056,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"338"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "tau_QP"
@@ -8892,6 +9101,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -8903,36 +9114,37 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "110"
+		    SIDHighWatermark	    "114"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4551::108"
+		    SID			    "4551::112"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    99
+		    ZOrder		    103
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    Ground
 		    Name		    " Ground "
-		    SID			    "4551::110"
+		    SID			    "4551::114"
 		    Position		    [20, 121, 40, 139]
-		    ZOrder		    101
+		    ZOrder		    105
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4551::107"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 9"
+		    SID			    "4551::111"
+		    Tag			    "Stateflow S-Function 9"
 		    Ports		    [1, 2]
 		    Position		    [180, 100, 230, 160]
-		    ZOrder		    98
+		    ZOrder		    102
 		    FunctionName	    "sf_sfun"
 		    Parameters		    "Config"
 		    PortCounts		    "[1 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -8942,9 +9154,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4551::109"
+		    SID			    "4551::113"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    100
+		    ZOrder		    104
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -8953,10 +9165,11 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    Name		    "reflectedInertia"
-		    ZOrder		    89
+		    ZOrder		    93
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -8964,21 +9177,21 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    90
+		    ZOrder		    94
 		    SrcBlock		    " Ground "
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    91
+		    ZOrder		    95
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    92
+		    ZOrder		    96
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -9009,7 +9222,6 @@ Model {
 		  ShowName		  off
 		  HideAutomaticName	  off
 		  GotoTag		  "jointAcc_des"
-		  TagVisibility		  "global"
 		}
 		Block {
 		  BlockType		  From
@@ -9081,6 +9293,7 @@ Model {
 		  Position		  [485, -57, 515, -43]
 		  ZOrder		  592
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  6
@@ -9211,6 +9424,8 @@ Model {
 		Location		[219, 337, 814, 775]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -9222,7 +9437,8 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SIDHighWatermark	"3788"
+		SIDHighWatermark	"3791"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "feetContactStatus"
@@ -9423,25 +9639,25 @@ Model {
 		Block {
 		  BlockType		  Demux
 		  Name			  " Demux "
-		  SID			  "2407::3787"
+		  SID			  "2407::3790"
 		  Ports			  [1, 1]
 		  Position		  [270, 570, 320, 610]
-		  ZOrder		  190
+		  ZOrder		  193
 		  Outputs		  "1"
 		}
 		Block {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
-		  SID			  "2407::3786"
-		  Tag			  "Stateflow S-Function torqueControlBalancing 17"
+		  SID			  "2407::3789"
+		  Tag			  "Stateflow S-Function 17"
 		  Ports			  [22, 13]
 		  Position		  [180, 70, 230, 530]
-		  ZOrder		  189
+		  ZOrder		  192
 		  FunctionName		  "sf_sfun"
 		  Parameters		  "Config,Gain,Reg"
 		  PortCounts		  "[22 13]"
 		  SFunctionDeploymentMode off
-		  EnableBusSupport	  off
+		  EnableBusSupport	  on
 		  SFcnIsStateOwnerBlock	  off
 		  Port {
 		    PortNumber		    2
@@ -9495,9 +9711,9 @@ Model {
 		Block {
 		  BlockType		  Terminator
 		  Name			  " Terminator "
-		  SID			  "2407::3788"
+		  SID			  "2407::3791"
 		  Position		  [460, 581, 480, 599]
-		  ZOrder		  191
+		  ZOrder		  194
 		}
 		Block {
 		  BlockType		  Outport
@@ -9506,6 +9722,7 @@ Model {
 		  Position		  [460, 101, 480, 119]
 		  ZOrder		  72
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9515,6 +9732,7 @@ Model {
 		  ZOrder		  70
 		  Port			  "2"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9524,6 +9742,7 @@ Model {
 		  ZOrder		  -5
 		  Port			  "3"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9533,6 +9752,7 @@ Model {
 		  ZOrder		  58
 		  Port			  "4"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9542,6 +9762,7 @@ Model {
 		  ZOrder		  75
 		  Port			  "5"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9551,6 +9772,7 @@ Model {
 		  ZOrder		  76
 		  Port			  "6"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9560,6 +9782,7 @@ Model {
 		  ZOrder		  59
 		  Port			  "7"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9569,6 +9792,7 @@ Model {
 		  ZOrder		  60
 		  Port			  "8"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9578,6 +9802,7 @@ Model {
 		  ZOrder		  63
 		  Port			  "9"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9587,6 +9812,7 @@ Model {
 		  ZOrder		  64
 		  Port			  "10"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9596,6 +9822,7 @@ Model {
 		  ZOrder		  68
 		  Port			  "11"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -9605,156 +9832,157 @@ Model {
 		  ZOrder		  69
 		  Port			  "12"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
-		  ZOrder		  2150
+		  ZOrder		  2186
 		  SrcBlock		  "feetContactStatus"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  2151
+		  ZOrder		  2187
 		  SrcBlock		  "ConstraintsMatrix"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  2
 		}
 		Line {
-		  ZOrder		  2152
+		  ZOrder		  2188
 		  SrcBlock		  "bVectorConstraints"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  3
 		}
 		Line {
-		  ZOrder		  2153
+		  ZOrder		  2189
 		  SrcBlock		  "jointPos"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  4
 		}
 		Line {
-		  ZOrder		  2154
+		  ZOrder		  2190
 		  SrcBlock		  "jointPos_des"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  5
 		}
 		Line {
-		  ZOrder		  2155
+		  ZOrder		  2191
 		  SrcBlock		  "nu"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  6
 		}
 		Line {
-		  ZOrder		  2156
+		  ZOrder		  2192
 		  SrcBlock		  "M"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  7
 		}
 		Line {
-		  ZOrder		  2157
+		  ZOrder		  2193
 		  SrcBlock		  "h"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  8
 		}
 		Line {
-		  ZOrder		  2158
+		  ZOrder		  2194
 		  SrcBlock		  "L"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  9
 		}
 		Line {
-		  ZOrder		  2159
+		  ZOrder		  2195
 		  SrcBlock		  "intL_angMomError"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  10
 		}
 		Line {
-		  ZOrder		  2160
+		  ZOrder		  2196
 		  SrcBlock		  "w_H_l_sole"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  11
 		}
 		Line {
-		  ZOrder		  2161
+		  ZOrder		  2197
 		  SrcBlock		  "w_H_r_sole"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  12
 		}
 		Line {
-		  ZOrder		  2162
+		  ZOrder		  2198
 		  SrcBlock		  "J_l_sole"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  13
 		}
 		Line {
-		  ZOrder		  2163
+		  ZOrder		  2199
 		  SrcBlock		  "J_r_sole"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  14
 		}
 		Line {
-		  ZOrder		  2164
+		  ZOrder		  2200
 		  SrcBlock		  "JDot_l_sole_nu"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  15
 		}
 		Line {
-		  ZOrder		  2165
+		  ZOrder		  2201
 		  SrcBlock		  "JDot_r_sole_nu"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  16
 		}
 		Line {
-		  ZOrder		  2166
+		  ZOrder		  2202
 		  SrcBlock		  "pos_CoM"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  17
 		}
 		Line {
-		  ZOrder		  2167
+		  ZOrder		  2203
 		  SrcBlock		  "J_CoM"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  18
 		}
 		Line {
-		  ZOrder		  2168
+		  ZOrder		  2204
 		  SrcBlock		  "desired_pos_vel_acc_CoM"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  19
 		}
 		Line {
-		  ZOrder		  2169
+		  ZOrder		  2205
 		  SrcBlock		  "KP_CoM"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  20
 		}
 		Line {
-		  ZOrder		  2170
+		  ZOrder		  2206
 		  SrcBlock		  "KD_CoM"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  21
 		}
 		Line {
-		  ZOrder		  2171
+		  ZOrder		  2207
 		  SrcBlock		  "KP_postural"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
@@ -9762,7 +9990,7 @@ Model {
 		}
 		Line {
 		  Name			  "HessianMatrixOneFoot"
-		  ZOrder		  2172
+		  ZOrder		  2208
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  2
@@ -9771,7 +9999,7 @@ Model {
 		}
 		Line {
 		  Name			  "gradientOneFoot"
-		  ZOrder		  2173
+		  ZOrder		  2209
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  3
@@ -9780,7 +10008,7 @@ Model {
 		}
 		Line {
 		  Name			  "ConstraintsMatrixOneFoot"
-		  ZOrder		  2174
+		  ZOrder		  2210
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  4
@@ -9789,7 +10017,7 @@ Model {
 		}
 		Line {
 		  Name			  "bVectorConstraintsOneFoot"
-		  ZOrder		  2175
+		  ZOrder		  2211
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  5
@@ -9798,7 +10026,7 @@ Model {
 		}
 		Line {
 		  Name			  "HessianMatrixTwoFeet"
-		  ZOrder		  2176
+		  ZOrder		  2212
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  6
@@ -9807,7 +10035,7 @@ Model {
 		}
 		Line {
 		  Name			  "gradientTwoFeet"
-		  ZOrder		  2177
+		  ZOrder		  2213
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  7
@@ -9816,7 +10044,7 @@ Model {
 		}
 		Line {
 		  Name			  "ConstraintsMatrixTwoFeet"
-		  ZOrder		  2178
+		  ZOrder		  2214
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  8
@@ -9825,7 +10053,7 @@ Model {
 		}
 		Line {
 		  Name			  "bVectorConstraintsTwoFeet"
-		  ZOrder		  2179
+		  ZOrder		  2215
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  9
@@ -9834,7 +10062,7 @@ Model {
 		}
 		Line {
 		  Name			  "tauModel"
-		  ZOrder		  2180
+		  ZOrder		  2216
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  10
@@ -9843,7 +10071,7 @@ Model {
 		}
 		Line {
 		  Name			  "Sigma"
-		  ZOrder		  2181
+		  ZOrder		  2217
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  11
@@ -9852,7 +10080,7 @@ Model {
 		}
 		Line {
 		  Name			  "Na"
-		  ZOrder		  2182
+		  ZOrder		  2218
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  12
@@ -9861,7 +10089,7 @@ Model {
 		}
 		Line {
 		  Name			  "f_LDot"
-		  ZOrder		  2183
+		  ZOrder		  2219
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  13
@@ -9869,14 +10097,14 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  2184
+		  ZOrder		  2220
 		  SrcBlock		  " Demux "
 		  SrcPort		  1
 		  DstBlock		  " Terminator "
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  2185
+		  ZOrder		  2221
 		  SrcBlock		  " SFunction "
 		  SrcPort		  1
 		  DstBlock		  " Demux "
@@ -9891,6 +10119,7 @@ Model {
 	      Position		      [2340, 73, 2370, 87]
 	      ZOrder		      279
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Line {
 	      ZOrder		      303
@@ -10225,6 +10454,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -10236,6 +10467,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "312"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "w_H_b"
@@ -10275,6 +10507,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -10286,6 +10520,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"522"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "w_H_b"
@@ -10325,6 +10560,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -10336,6 +10573,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "634"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "M"
@@ -10361,6 +10599,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -10372,7 +10612,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "88"
+		    SIDHighWatermark	    "91"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "M"
@@ -10384,25 +10625,25 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4518::87"
+		    SID			    "4518::90"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    77
+		    ZOrder		    80
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4518::86"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 6"
+		    SID			    "4518::89"
+		    Tag			    "Stateflow S-Function 6"
 		    Ports		    [1, 2]
 		    Position		    [180, 100, 230, 160]
-		    ZOrder		    76
+		    ZOrder		    79
 		    FunctionName	    "sf_sfun"
 		    Parameters		    "Config"
 		    PortCounts		    "[1 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -10412,9 +10653,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4518::88"
+		    SID			    "4518::91"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    78
+		    ZOrder		    81
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -10423,9 +10664,10 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    102
+		    ZOrder		    106
 		    SrcBlock		    "M"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -10433,7 +10675,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "M_with_inertia"
-		    ZOrder		    103
+		    ZOrder		    107
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -10441,14 +10683,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    104
+		    ZOrder		    108
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    105
+		    ZOrder		    109
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -10483,6 +10725,7 @@ Model {
 		    Position		    [455, 143, 485, 157]
 		    ZOrder		    592
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    109
@@ -10599,6 +10842,7 @@ Model {
 		  Position		  [750, 48, 780, 62]
 		  ZOrder		  587
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -10608,6 +10852,7 @@ Model {
 		  ZOrder		  588
 		  Port			  "2"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -10617,6 +10862,7 @@ Model {
 		  ZOrder		  589
 		  Port			  "3"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  83
@@ -10764,6 +11010,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -10775,6 +11023,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"365"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "nu"
@@ -10980,6 +11229,7 @@ Model {
 		  Position		  [380, 48, 410, 62]
 		  ZOrder		  865
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -10989,6 +11239,7 @@ Model {
 		  ZOrder		  874
 		  Port			  "2"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -10998,6 +11249,7 @@ Model {
 		  ZOrder		  875
 		  Port			  "3"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -11007,6 +11259,7 @@ Model {
 		  ZOrder		  876
 		  Port			  "4"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -11016,6 +11269,7 @@ Model {
 		  ZOrder		  877
 		  Port			  "5"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -11025,6 +11279,7 @@ Model {
 		  ZOrder		  878
 		  Port			  "6"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -11034,6 +11289,7 @@ Model {
 		  ZOrder		  879
 		  Port			  "7"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -11043,6 +11299,7 @@ Model {
 		  ZOrder		  881
 		  Port			  "8"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  37
@@ -11316,6 +11573,7 @@ Model {
 	      Position		      [-475, -167, -445, -153]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11325,6 +11583,7 @@ Model {
 	      ZOrder		      217
 	      Port		      "2"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11334,6 +11593,7 @@ Model {
 	      ZOrder		      216
 	      Port		      "3"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11343,6 +11603,7 @@ Model {
 	      ZOrder		      882
 	      Port		      "4"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11352,6 +11613,7 @@ Model {
 	      ZOrder		      883
 	      Port		      "5"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11361,6 +11623,7 @@ Model {
 	      ZOrder		      884
 	      Port		      "6"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11370,6 +11633,7 @@ Model {
 	      ZOrder		      885
 	      Port		      "7"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11379,6 +11643,7 @@ Model {
 	      ZOrder		      886
 	      Port		      "8"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11388,6 +11653,7 @@ Model {
 	      ZOrder		      887
 	      Port		      "9"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11397,6 +11663,7 @@ Model {
 	      ZOrder		      888
 	      Port		      "10"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11406,6 +11673,7 @@ Model {
 	      ZOrder		      889
 	      Port		      "11"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Line {
 	      ZOrder		      109
@@ -11551,6 +11819,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -11562,6 +11832,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "502"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "tau_star"
@@ -11628,6 +11899,8 @@ Model {
 		Location		[223, 338, 826, 833]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -11639,7 +11912,8 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SIDHighWatermark	"83"
+		SIDHighWatermark	"86"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "u"
@@ -11678,24 +11952,24 @@ Model {
 		Block {
 		  BlockType		  Demux
 		  Name			  " Demux "
-		  SID			  "4556::82"
+		  SID			  "4556::85"
 		  Ports			  [1, 1]
 		  Position		  [270, 230, 320, 270]
-		  ZOrder		  71
+		  ZOrder		  74
 		  Outputs		  "1"
 		}
 		Block {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
-		  SID			  "4556::81"
-		  Tag			  "Stateflow S-Function torqueControlBalancing 11"
+		  SID			  "4556::84"
+		  Tag			  "Stateflow S-Function 11"
 		  Ports			  [4, 2]
 		  Position		  [180, 102, 230, 203]
-		  ZOrder		  70
+		  ZOrder		  73
 		  FunctionName		  "sf_sfun"
 		  PortCounts		  "[4 2]"
 		  SFunctionDeploymentMode off
-		  EnableBusSupport	  off
+		  EnableBusSupport	  on
 		  SFcnIsStateOwnerBlock	  off
 		  Port {
 		    PortNumber		    2
@@ -11705,9 +11979,9 @@ Model {
 		Block {
 		  BlockType		  Terminator
 		  Name			  " Terminator "
-		  SID			  "4556::83"
+		  SID			  "4556::86"
 		  Position		  [460, 241, 480, 259]
-		  ZOrder		  72
+		  ZOrder		  75
 		}
 		Block {
 		  BlockType		  Outport
@@ -11716,30 +11990,31 @@ Model {
 		  Position		  [460, 101, 480, 119]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
-		  ZOrder		  147
+		  ZOrder		  154
 		  SrcBlock		  "u"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  148
+		  ZOrder		  155
 		  SrcBlock		  "u_0"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  2
 		}
 		Line {
-		  ZOrder		  149
+		  ZOrder		  156
 		  SrcBlock		  "tStep"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
 		  DstPort		  3
 		}
 		Line {
-		  ZOrder		  150
+		  ZOrder		  157
 		  SrcBlock		  "uDotMax"
 		  SrcPort		  1
 		  DstBlock		  " SFunction "
@@ -11747,7 +12022,7 @@ Model {
 		}
 		Line {
 		  Name			  "uSat"
-		  ZOrder		  151
+		  ZOrder		  158
 		  Labels		  [0, 0]
 		  SrcBlock		  " SFunction "
 		  SrcPort		  2
@@ -11755,14 +12030,14 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  152
+		  ZOrder		  159
 		  SrcBlock		  " Demux "
 		  SrcPort		  1
 		  DstBlock		  " Terminator "
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  153
+		  ZOrder		  160
 		  SrcBlock		  " SFunction "
 		  SrcPort		  1
 		  DstBlock		  " Demux "
@@ -11817,6 +12092,7 @@ Model {
 	      Position		      [545, 88, 575, 102]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Line {
 	      ZOrder		      2
@@ -11917,9 +12193,11 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Robot State and References"
-	    Location		    [134, 55, 3840, 2160]
+	    Location		    [0, 23, 1440, 852]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -11930,7 +12208,8 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "357"
+	    ZoomFactor		    "80"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "jointPos"
@@ -11988,6 +12267,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -11999,6 +12280,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"517"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "jointPos"
@@ -12053,6 +12335,8 @@ Model {
 		    Location		    [19, 45, 910, 1950]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12064,7 +12348,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "3812"
+		    SIDHighWatermark	    "3815"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "J_l_sole"
@@ -12103,25 +12388,25 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4215::3811"
+		    SID			    "4215::3814"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    180
+		    ZOrder		    183
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4215::3810"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 7"
+		    SID			    "4215::3813"
+		    Tag			    "Stateflow S-Function 7"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    179
+		    ZOrder		    182
 		    FunctionName	    "sf_sfun"
 		    Parameters		    "Reg"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -12131,9 +12416,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4215::3812"
+		    SID			    "4215::3815"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    181
+		    ZOrder		    184
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -12142,30 +12427,31 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -6
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    36
+		    ZOrder		    43
 		    SrcBlock		    "J_l_sole"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    37
+		    ZOrder		    44
 		    SrcBlock		    "J_r_sole"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    38
+		    ZOrder		    45
 		    SrcBlock		    "feetContactStatus"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    39
+		    ZOrder		    46
 		    SrcBlock		    "jointVel"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -12173,7 +12459,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "nu_b"
-		    ZOrder		    40
+		    ZOrder		    47
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -12181,14 +12467,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    41
+		    ZOrder		    48
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    42
+		    ZOrder		    49
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -12209,6 +12495,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12220,6 +12508,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "937"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "jointPos"
@@ -12272,6 +12561,7 @@ Model {
 		    Position		    [935, 498, 965, 512]
 		    ZOrder		    676
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -12281,6 +12571,7 @@ Model {
 		    ZOrder		    677
 		    Port		    "2"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -12350,6 +12641,7 @@ Model {
 		  Position		  [660, -122, 690, -108]
 		  ZOrder		  -15
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  20
@@ -12432,6 +12724,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -12443,6 +12737,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"553"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "jointPos"
@@ -12492,6 +12787,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12503,6 +12800,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "248"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "jointPos"
@@ -12585,6 +12883,8 @@ Model {
 		    Location		    [219, 337, 814, 775]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12596,8 +12896,9 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "3803"
+		    SIDHighWatermark	    "3806"
 		    SIDPrevWatermark	    "9"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "imu_H_fixedLink"
@@ -12654,25 +12955,25 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4257::3802"
+		    SID			    "4257::3805"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    202
+		    ZOrder		    205
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4257::3801"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 8"
+		    SID			    "4257::3804"
+		    Tag			    "Stateflow S-Function 8"
 		    Ports		    [6, 2]
 		    Position		    [180, 102, 230, 243]
-		    ZOrder		    201
+		    ZOrder		    204
 		    FunctionName	    "sf_sfun"
 		    Parameters		    "Config"
 		    PortCounts		    "[6 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -12682,9 +12983,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4257::3803"
+		    SID			    "4257::3806"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    203
+		    ZOrder		    206
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -12693,44 +12994,45 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    80
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    46
+		    ZOrder		    55
 		    SrcBlock		    "imu_H_fixedLink"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    47
+		    ZOrder		    56
 		    SrcBlock		    "imu_H_fixedLink_0"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    48
+		    ZOrder		    57
 		    SrcBlock		    "fixedLink_H_base"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    49
+		    ZOrder		    58
 		    SrcBlock		    "rpyFromIMU_0"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    4
 		    }
 		    Line {
-		    ZOrder		    50
+		    ZOrder		    59
 		    SrcBlock		    "rpyFromIMU"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    5
 		    }
 		    Line {
-		    ZOrder		    51
+		    ZOrder		    60
 		    SrcBlock		    "neck_pos"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -12738,7 +13040,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "w_H_b"
-		    ZOrder		    52
+		    ZOrder		    61
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -12746,14 +13048,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    53
+		    ZOrder		    62
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    54
+		    ZOrder		    63
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -12911,6 +13213,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12922,6 +13226,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "843"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "neck port"
@@ -12996,6 +13301,7 @@ Model {
 		    Position		    [425, 53, 455, 67]
 		    ZOrder		    726
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -13050,6 +13356,7 @@ Model {
 		    Position		    [1875, 278, 1905, 292]
 		    ZOrder		    732
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -13251,6 +13558,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -13262,6 +13571,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "248"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "jointPos"
@@ -13344,6 +13654,8 @@ Model {
 		    Location		    [219, 337, 814, 775]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -13355,8 +13667,9 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "3803"
+		    SIDHighWatermark	    "3806"
 		    SIDPrevWatermark	    "9"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "imu_H_fixedLink"
@@ -13413,25 +13726,25 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4857::3802"
+		    SID			    "4857::3805"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    202
+		    ZOrder		    205
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4857::3801"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 3"
+		    SID			    "4857::3804"
+		    Tag			    "Stateflow S-Function 3"
 		    Ports		    [6, 2]
 		    Position		    [180, 102, 230, 243]
-		    ZOrder		    201
+		    ZOrder		    204
 		    FunctionName	    "sf_sfun"
 		    Parameters		    "Config"
 		    PortCounts		    "[6 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -13441,9 +13754,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4857::3803"
+		    SID			    "4857::3806"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    203
+		    ZOrder		    206
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -13452,44 +13765,45 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    80
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    46
+		    ZOrder		    55
 		    SrcBlock		    "imu_H_fixedLink"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    47
+		    ZOrder		    56
 		    SrcBlock		    "imu_H_fixedLink_0"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    48
+		    ZOrder		    57
 		    SrcBlock		    "fixedLink_H_base"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    49
+		    ZOrder		    58
 		    SrcBlock		    "rpyFromIMU_0"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    4
 		    }
 		    Line {
-		    ZOrder		    50
+		    ZOrder		    59
 		    SrcBlock		    "rpyFromIMU"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    5
 		    }
 		    Line {
-		    ZOrder		    51
+		    ZOrder		    60
 		    SrcBlock		    "neck_pos"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -13497,7 +13811,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "w_H_b"
-		    ZOrder		    52
+		    ZOrder		    61
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -13505,14 +13819,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    53
+		    ZOrder		    62
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    54
+		    ZOrder		    63
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -13670,6 +13984,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -13681,6 +13997,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "843"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "neck port"
@@ -13755,6 +14072,7 @@ Model {
 		    Position		    [425, 53, 455, 67]
 		    ZOrder		    726
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -13809,6 +14127,7 @@ Model {
 		    Position		    [1875, 278, 1905, 292]
 		    ZOrder		    732
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -14032,6 +14351,7 @@ Model {
 		  Position		  [650, 28, 680, 42]
 		  ZOrder		  910
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -14041,6 +14361,7 @@ Model {
 		  ZOrder		  912
 		  Port			  "2"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  1
@@ -14199,9 +14520,11 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"State Machine"
-		Location		[134, 55, 3840, 2160]
+		Location		[0, 23, 1440, 852]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -14212,7 +14535,8 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"292"
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "jointPos"
@@ -14378,6 +14702,8 @@ Model {
 		    Location		    [219, 337, 814, 775]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -14389,8 +14715,9 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "3791"
+		    SIDHighWatermark	    "3794"
 		    SIDPrevWatermark	    "9"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "pos_CoM_0"
@@ -14483,25 +14810,25 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "2220::3790"
+		    SID			    "2220::3793"
 		    Ports		    [1, 1]
 		    Position		    [270, 495, 320, 535]
-		    ZOrder		    188
+		    ZOrder		    191
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "2220::3789"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 13"
+		    SID			    "2220::3792"
+		    Tag			    "Stateflow S-Function 13"
 		    Ports		    [10, 11]
 		    Position		    [180, 100, 230, 340]
-		    ZOrder		    187
+		    ZOrder		    190
 		    FunctionName	    "sf_sfun"
 		    Parameters		    "Config,Gain,StateMachine"
 		    PortCounts		    "[10 11]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -14547,9 +14874,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "2220::3791"
+		    SID			    "2220::3794"
 		    Position		    [460, 506, 480, 524]
-		    ZOrder		    189
+		    ZOrder		    192
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14558,6 +14885,7 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    80
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14567,6 +14895,7 @@ Model {
 		    ZOrder		    53
 		    Port		    "2"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14576,6 +14905,7 @@ Model {
 		    ZOrder		    43
 		    Port		    "3"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14585,6 +14915,7 @@ Model {
 		    ZOrder		    40
 		    Port		    "4"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14594,6 +14925,7 @@ Model {
 		    ZOrder		    70
 		    Port		    "5"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14603,6 +14935,7 @@ Model {
 		    ZOrder		    84
 		    Port		    "6"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14612,6 +14945,7 @@ Model {
 		    ZOrder		    85
 		    Port		    "7"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14621,6 +14955,7 @@ Model {
 		    ZOrder		    71
 		    Port		    "8"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14630,6 +14965,7 @@ Model {
 		    ZOrder		    83
 		    Port		    "9"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -14639,72 +14975,73 @@ Model {
 		    ZOrder		    174
 		    Port		    "10"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    904
+		    ZOrder		    926
 		    SrcBlock		    "pos_CoM_0"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    905
+		    ZOrder		    927
 		    SrcBlock		    "jointPos_0"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    906
+		    ZOrder		    928
 		    SrcBlock		    "pos_CoM_fixed_l_sole"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    907
+		    ZOrder		    929
 		    SrcBlock		    "pos_CoM_fixed_r_sole"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    4
 		    }
 		    Line {
-		    ZOrder		    908
+		    ZOrder		    930
 		    SrcBlock		    "jointPos"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    5
 		    }
 		    Line {
-		    ZOrder		    909
+		    ZOrder		    931
 		    SrcBlock		    "time"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    6
 		    }
 		    Line {
-		    ZOrder		    910
+		    ZOrder		    932
 		    SrcBlock		    "wrench_rightFoot"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    7
 		    }
 		    Line {
-		    ZOrder		    911
+		    ZOrder		    933
 		    SrcBlock		    "wrench_leftFoot"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    8
 		    }
 		    Line {
-		    ZOrder		    912
+		    ZOrder		    934
 		    SrcBlock		    "l_sole_H_b"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    9
 		    }
 		    Line {
-		    ZOrder		    913
+		    ZOrder		    935
 		    SrcBlock		    "r_sole_H_b"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -14712,7 +15049,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "w_H_b"
-		    ZOrder		    914
+		    ZOrder		    936
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -14721,7 +15058,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "pos_CoM_des"
-		    ZOrder		    915
+		    ZOrder		    937
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    3
@@ -14730,7 +15067,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "jointPos_des"
-		    ZOrder		    916
+		    ZOrder		    938
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    4
@@ -14739,7 +15076,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "feetContactStatus"
-		    ZOrder		    917
+		    ZOrder		    939
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    5
@@ -14748,7 +15085,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "KP_postural_diag"
-		    ZOrder		    918
+		    ZOrder		    940
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    6
@@ -14757,7 +15094,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "KP_CoM_diag"
-		    ZOrder		    919
+		    ZOrder		    941
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    7
@@ -14766,7 +15103,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "KD_CoM_diag"
-		    ZOrder		    920
+		    ZOrder		    942
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    8
@@ -14775,7 +15112,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "state"
-		    ZOrder		    921
+		    ZOrder		    943
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    9
@@ -14784,7 +15121,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "smoothingTimeJoints"
-		    ZOrder		    922
+		    ZOrder		    944
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    10
@@ -14793,7 +15130,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "smoothingTimeCoM"
-		    ZOrder		    923
+		    ZOrder		    945
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    11
@@ -14801,14 +15138,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    924
+		    ZOrder		    946
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    925
+		    ZOrder		    947
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    Points		    [20, 0]
@@ -14861,6 +15198,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -14872,6 +15211,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "824"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "w_H_b"
@@ -14925,6 +15265,7 @@ Model {
 		    Position		    [400, 253, 430, 267]
 		    ZOrder		    583
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -14970,6 +15311,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -14981,6 +15324,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "823"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "w_H_b"
@@ -15034,6 +15378,7 @@ Model {
 		    Position		    [400, 253, 430, 267]
 		    ZOrder		    583
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -15072,6 +15417,7 @@ Model {
 		  Position		  [365, 124, 395, 136]
 		  ZOrder		  578
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -15081,6 +15427,7 @@ Model {
 		  ZOrder		  480
 		  Port			  "2"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -15090,6 +15437,7 @@ Model {
 		  ZOrder		  478
 		  Port			  "3"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -15099,6 +15447,7 @@ Model {
 		  ZOrder		  479
 		  Port			  "4"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -15108,6 +15457,7 @@ Model {
 		  ZOrder		  545
 		  Port			  "5"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -15117,6 +15467,7 @@ Model {
 		  ZOrder		  680
 		  Port			  "6"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -15126,6 +15477,7 @@ Model {
 		  ZOrder		  689
 		  Port			  "7"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -15135,6 +15487,7 @@ Model {
 		  ZOrder		  691
 		  Port			  "8"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -15144,6 +15497,7 @@ Model {
 		  ZOrder		  905
 		  Port			  "9"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -15153,6 +15507,7 @@ Model {
 		  ZOrder		  550
 		  Port			  "10"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  173
@@ -15449,9 +15804,11 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Update Gains and References"
-		Location		[134, 55, 3840, 2160]
-		Open			off
+		Location		[0, 23, 1440, 852]
+		Open			on
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -15462,7 +15819,8 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"498"
+		ZoomFactor		"125"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "pos_CoM_des"
@@ -15560,6 +15918,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -15571,6 +15931,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "777"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "KP_postural_diag"
@@ -15617,6 +15978,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -15628,7 +15991,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "36"
+		    SIDHighWatermark	    "39"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "d"
@@ -15640,24 +16004,24 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4782::35"
+		    SID			    "4782::38"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    26
+		    ZOrder		    29
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4782::34"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 2"
+		    SID			    "4782::37"
+		    Tag			    "Stateflow S-Function 2"
 		    Ports		    [1, 2]
 		    Position		    [180, 100, 230, 160]
-		    ZOrder		    25
+		    ZOrder		    28
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[1 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -15667,9 +16031,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4782::36"
+		    SID			    "4782::39"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    27
+		    ZOrder		    30
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -15678,6 +16042,125 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
+		    }
+		    Line {
+		    ZOrder		    29
+		    SrcBlock		    "d"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "D"
+		    ZOrder		    30
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "D"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    31
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    32
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "MATLAB Function1"
+		    SID			    "4783"
+		    Ports		    [1, 1]
+		    Position		    [145, -33, 330, 23]
+		    ZOrder		    922
+		    ShowName		    off
+		    HideAutomaticName	    off
+		    ErrorFcn		    "Stateflow.Translate.translate"
+		    PermitHierarchicalResolution "ExplicitOnly"
+		    TreatAsAtomicUnit	    on
+		    RequestExecContextInheritance off
+		    SFBlockType		    "MATLAB Function"
+		    ContentPreviewEnabled   on
+		    System {
+		    Name		    "MATLAB Function1"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "39"
+		    SimulinkSubDomain	    "Simulink"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "d"
+		    SID			    "4783::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "4783::38"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    29
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "4783::37"
+		    Tag			    "Stateflow S-Function 1"
+		    Ports		    [1, 2]
+		    Position		    [180, 100, 230, 160]
+		    ZOrder		    28
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[1 2]"
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    on
+		    SFcnIsStateOwnerBlock   off
+		    Port {
+		    PortNumber		    2
+		    Name		    "D"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "4783::39"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    30
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "D"
+		    SID			    "4783::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    25
@@ -15713,120 +16196,6 @@ Model {
 		    }
 		    Block {
 		    BlockType		    SubSystem
-		    Name		    "MATLAB Function1"
-		    SID			    "4783"
-		    Ports		    [1, 1]
-		    Position		    [145, -33, 330, 23]
-		    ZOrder		    922
-		    ShowName		    off
-		    HideAutomaticName	    off
-		    ErrorFcn		    "Stateflow.Translate.translate"
-		    PermitHierarchicalResolution "ExplicitOnly"
-		    TreatAsAtomicUnit	    on
-		    RequestExecContextInheritance off
-		    SFBlockType		    "MATLAB Function"
-		    ContentPreviewEnabled   on
-		    System {
-		    Name		    "MATLAB Function1"
-		    Location		    [223, 338, 826, 833]
-		    Open		    off
-		    PortBlocksUseCompactNotation off
-		    ModelBrowserVisibility  off
-		    ModelBrowserWidth	    200
-		    ScreenColor		    "white"
-		    PaperOrientation	    "landscape"
-		    PaperPositionMode	    "auto"
-		    PaperType		    "usletter"
-		    PaperUnits		    "inches"
-		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-		    TiledPageScale	    1
-		    ShowPageBoundaries	    off
-		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "36"
-		    Block {
-		    BlockType		    Inport
-		    Name		    "d"
-		    SID			    "4783::1"
-		    Position		    [20, 101, 40, 119]
-		    ZOrder		    -1
-		    IconDisplay		    "Port number"
-		    }
-		    Block {
-		    BlockType		    Demux
-		    Name		    " Demux "
-		    SID			    "4783::35"
-		    Ports		    [1, 1]
-		    Position		    [270, 230, 320, 270]
-		    ZOrder		    26
-		    Outputs		    "1"
-		    }
-		    Block {
-		    BlockType		    S-Function
-		    Name		    " SFunction "
-		    SID			    "4783::34"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 1"
-		    Ports		    [1, 2]
-		    Position		    [180, 100, 230, 160]
-		    ZOrder		    25
-		    FunctionName	    "sf_sfun"
-		    PortCounts		    "[1 2]"
-		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
-		    SFcnIsStateOwnerBlock   off
-		    Port {
-		    PortNumber		    2
-		    Name		    "D"
-		    }
-		    }
-		    Block {
-		    BlockType		    Terminator
-		    Name		    " Terminator "
-		    SID			    "4783::36"
-		    Position		    [460, 241, 480, 259]
-		    ZOrder		    27
-		    }
-		    Block {
-		    BlockType		    Outport
-		    Name		    "D"
-		    SID			    "4783::5"
-		    Position		    [460, 101, 480, 119]
-		    ZOrder		    -5
-		    IconDisplay		    "Port number"
-		    }
-		    Line {
-		    ZOrder		    21
-		    SrcBlock		    "d"
-		    SrcPort		    1
-		    DstBlock		    " SFunction "
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "D"
-		    ZOrder		    22
-		    Labels		    [0, 0]
-		    SrcBlock		    " SFunction "
-		    SrcPort		    2
-		    DstBlock		    "D"
-		    DstPort		    1
-		    }
-		    Line {
-		    ZOrder		    23
-		    SrcBlock		    " Demux "
-		    SrcPort		    1
-		    DstBlock		    " Terminator "
-		    DstPort		    1
-		    }
-		    Line {
-		    ZOrder		    24
-		    SrcBlock		    " SFunction "
-		    SrcPort		    1
-		    DstBlock		    " Demux "
-		    DstPort		    1
-		    }
-		    }
-		    }
-		    Block {
-		    BlockType		    SubSystem
 		    Name		    "MATLAB Function2"
 		    SID			    "4784"
 		    Ports		    [1, 1]
@@ -15845,6 +16214,8 @@ Model {
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -15856,7 +16227,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "36"
+		    SIDHighWatermark	    "39"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "d"
@@ -15868,24 +16240,24 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4784::35"
+		    SID			    "4784::38"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    26
+		    ZOrder		    29
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4784::34"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 4"
+		    SID			    "4784::37"
+		    Tag			    "Stateflow S-Function 4"
 		    Ports		    [1, 2]
 		    Position		    [180, 100, 230, 160]
-		    ZOrder		    25
+		    ZOrder		    28
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[1 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -15895,9 +16267,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4784::36"
+		    SID			    "4784::39"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    27
+		    ZOrder		    30
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -15906,9 +16278,10 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -5
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    21
+		    ZOrder		    25
 		    SrcBlock		    "d"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -15916,7 +16289,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "D"
-		    ZOrder		    22
+		    ZOrder		    26
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -15924,14 +16297,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    23
+		    ZOrder		    27
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    24
+		    ZOrder		    28
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -15946,6 +16319,7 @@ Model {
 		    Position		    [420, -82, 450, -68]
 		    ZOrder		    918
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -15955,6 +16329,7 @@ Model {
 		    ZOrder		    919
 		    Port		    "2"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -15964,6 +16339,7 @@ Model {
 		    ZOrder		    920
 		    Port		    "3"
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    1
@@ -16037,6 +16413,8 @@ Model {
 		    Location		    [134, 55, 3840, 2160]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -16048,6 +16426,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "357"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "pos_CoM_des"
@@ -16154,6 +16533,7 @@ Model {
 		    Position		    [965, -162, 995, -148]
 		    ZOrder		    915
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    615
@@ -16255,9 +16635,11 @@ Model {
 		  RequestExecContextInheritance	off
 		  System {
 		    Name		    "Smooth reference joint position"
-		    Location		    [134, 55, 3840, 2160]
+		    Location		    [0, 23, 1440, 852]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -16268,7 +16650,8 @@ Model {
 		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
-		    ZoomFactor		    "426"
+		    ZoomFactor		    "150"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "jointPos_des"
@@ -16353,6 +16736,7 @@ Model {
 		    Position		    [685, -77, 715, -63]
 		    ZOrder		    909
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
 		    ZOrder		    13
@@ -16422,6 +16806,7 @@ Model {
 		  Position		  [745, -17, 775, -3]
 		  ZOrder		  705
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -16431,6 +16816,7 @@ Model {
 		  ZOrder		  706
 		  Port			  "2"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -16440,6 +16826,7 @@ Model {
 		  ZOrder		  707
 		  Port			  "3"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -16449,6 +16836,7 @@ Model {
 		  ZOrder		  712
 		  Port			  "4"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Block {
 		  BlockType		  Outport
@@ -16458,6 +16846,7 @@ Model {
 		  ZOrder		  713
 		  Port			  "5"
 		  IconDisplay		  "Port number"
+		  VectorParamsAs1DForOutWhenUnconnected	off
 		}
 		Line {
 		  ZOrder		  604
@@ -16579,6 +16968,7 @@ Model {
 	      Position		      [25, 2524, 55, 2536]
 	      ZOrder		      578
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -16588,6 +16978,7 @@ Model {
 	      ZOrder		      577
 	      Port		      "2"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -16597,6 +16988,7 @@ Model {
 	      ZOrder		      647
 	      Port		      "3"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -16606,6 +16998,7 @@ Model {
 	      ZOrder		      410
 	      Port		      "4"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -16615,6 +17008,7 @@ Model {
 	      ZOrder		      517
 	      Port		      "5"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -16624,6 +17018,7 @@ Model {
 	      ZOrder		      692
 	      Port		      "6"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -16633,6 +17028,7 @@ Model {
 	      ZOrder		      693
 	      Port		      "7"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -16642,6 +17038,7 @@ Model {
 	      ZOrder		      323
 	      Port		      "8"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -16651,6 +17048,7 @@ Model {
 	      ZOrder		      418
 	      Port		      "9"
 	      IconDisplay	      "Port number"
+	      VectorParamsAs1DForOutWhenUnconnected off
 	    }
 	    Line {
 	      ZOrder		      545
@@ -16886,7 +17284,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    23
+	    $ObjectID		    27
 	    $ClassName		    "Simulink.Mask"
 	    Display		    "disp('EMERGENCY STOP')"
 	    RunInitForIconRedraw    "off"
@@ -16896,6 +17294,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -16907,6 +17307,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "904"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "jointPos"
@@ -16952,6 +17353,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -16963,6 +17366,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"898"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "jointPos"
@@ -17025,6 +17429,8 @@ Model {
 		    Location		    [121, 45, 868, 1245]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -17036,7 +17442,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "3788"
+		    SIDHighWatermark	    "3791"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "umin"
@@ -17075,24 +17482,24 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "2421::3787"
+		    SID			    "2421::3790"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    137
+		    ZOrder		    140
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "2421::3786"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 18"
+		    SID			    "2421::3789"
+		    Tag			    "Stateflow S-Function 18"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    136
+		    ZOrder		    139
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -17102,9 +17509,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "2421::3788"
+		    SID			    "2421::3791"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    138
+		    ZOrder		    141
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -17113,30 +17520,31 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -8
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    36
+		    ZOrder		    43
 		    SrcBlock		    "umin"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    37
+		    ZOrder		    44
 		    SrcBlock		    "umax"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    38
+		    ZOrder		    45
 		    SrcBlock		    "u"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    39
+		    ZOrder		    46
 		    SrcBlock		    "tol"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -17144,7 +17552,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "inRange"
-		    ZOrder		    40
+		    ZOrder		    47
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -17152,14 +17560,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    41
+		    ZOrder		    48
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    42
+		    ZOrder		    49
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -17227,6 +17635,8 @@ Model {
 		Location		[134, 55, 3840, 2160]
 		Open			off
 		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -17238,6 +17648,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"827"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "jointPos"
@@ -17283,6 +17694,8 @@ Model {
 		    Location		    [121, 45, 868, 1245]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -17294,7 +17707,8 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "3788"
+		    SIDHighWatermark	    "3791"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "u"
@@ -17315,24 +17729,24 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "4669::3787"
+		    SID			    "4669::3790"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    137
+		    ZOrder		    140
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "4669::3786"
-		    Tag			    "Stateflow S-Function torqueControlBalancing 14"
+		    SID			    "4669::3789"
+		    Tag			    "Stateflow S-Function 14"
 		    Ports		    [2, 2]
 		    Position		    [180, 100, 230, 160]
-		    ZOrder		    136
+		    ZOrder		    139
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[2 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -17342,9 +17756,9 @@ Model {
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "4669::3788"
+		    SID			    "4669::3791"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    138
+		    ZOrder		    141
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -17353,9 +17767,10 @@ Model {
 		    Position		    [460, 101, 480, 119]
 		    ZOrder		    -8
 		    IconDisplay		    "Port number"
+		    VectorParamsAs1DForOutWhenUnconnected off
 		    }
 		    Line {
-		    ZOrder		    26
+		    ZOrder		    31
 		    SrcBlock		    "u"
 		    SrcPort		    1
 		    Points		    [120, 0]
@@ -17363,7 +17778,7 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    27
+		    ZOrder		    32
 		    SrcBlock		    "delta_u_max"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -17371,7 +17786,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "noSpikes"
-		    ZOrder		    28
+		    ZOrder		    33
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -17379,14 +17794,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    29
+		    ZOrder		    34
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    30
+		    ZOrder		    35
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -17467,6 +17882,7 @@ Model {
 	  Position		  [1160, 313, 1190, 327]
 	  ZOrder		  560
 	  IconDisplay		  "Port number"
+	  VectorParamsAs1DForOutWhenUnconnected	off
 	}
 	Line {
 	  ZOrder		  94
@@ -17727,7 +18143,7 @@ Model {
       RequestExecContextInheritance off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		24
+	$ObjectID		28
 	$ClassName		"Simulink.Mask"
 	Display			"disp('SYNCHRONIZER')"
       }
@@ -17736,6 +18152,8 @@ Model {
 	Location		[134, 55, 3840, 2160]
 	Open			off
 	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -17747,6 +18165,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"947"
+	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "GAZEBO_SYNCHRONIZER"
@@ -17760,6 +18179,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -17771,6 +18192,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "1000"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      EnablePort
 	      Name		      "Enable"
@@ -17837,6 +18259,8 @@ Model {
 	    Location		    [134, 55, 3840, 2160]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -17848,6 +18272,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "1000"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      EnablePort
 	      Name		      "Enable"
@@ -17887,7 +18312,6 @@ Model {
 	  VariableName		  "yarp_time"
 	  MaxDataPoints		  "inf"
 	  SaveFormat		  "Structure With Time"
-	  Save2DSignal		  "3-D array (concatenate along third dimension)"
 	  FixptAsFi		  on
 	  SampleTime		  "-1"
 	}
@@ -18037,16 +18461,14 @@ Model {
 }
 #Finite State Machines
 #
-#   Stateflow 80000014
+#   Stateflow 80000019
 #
 #
 Stateflow {
   machine {
     id			    1
     name		    "torqueControlBalancing"
-    created		    "18-Feb-2014 10:14:40"
-    isLibrary		    0
-    sfVersion		    80000012
+    sfVersion		    80000019
     firstTarget		    235
   }
   chart {
